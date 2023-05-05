@@ -1,0 +1,26 @@
+.title {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.layout {
+  background-color: #fdf4f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.buttonBurger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger {
+  margin-top: 5px;
+}
