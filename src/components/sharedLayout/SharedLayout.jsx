@@ -7,7 +7,7 @@ const SharedLayout = () => {
     <div>
       <div className={css.layout}>
         <div>
-          <h3 className={css.title}>B-Baltic</h3>
+          <h3 className={css.title}>BB-Altic</h3>
           <p>Pokoje i apartamenty</p>
         </div>
         <div>
