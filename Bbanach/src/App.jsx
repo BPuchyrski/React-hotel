@@ -6,7 +6,7 @@ const SharedLayout = lazy(() =>
   import("./components/sharedLayout/SharedLayout")
 );
 
-const HomePage = lazy(() => import("./components/homePage/HomePage"));
+const HomePage = lazy(() => import("./pages/HomePage"));
 
 function App() {
   // const [count, setCount] = useState(0);
