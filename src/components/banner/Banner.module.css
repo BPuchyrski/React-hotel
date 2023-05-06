@@ -44,3 +44,32 @@
   border-bottom: 1px solid white;
   margin-bottom: 10px;
 }
+.lineShortLast {
+  width: 50%;
+  border-bottom: 1px solid white;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .bannerTitle {
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  .bannerText {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bannerTitle {
+    font-size: 70px;
+    margin-bottom: 0px;
+  }
+  .bannerText {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
