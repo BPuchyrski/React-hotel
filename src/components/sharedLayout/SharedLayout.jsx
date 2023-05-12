@@ -1,9 +1,23 @@
 import { Outlet } from "react-router-dom";
 import css from "./SharedLayout.module.css";
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 
 const SharedLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [isMenuOpen]);
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
@@ -19,7 +33,7 @@ const SharedLayout = () => {
 
   return (
     <div>
-      <nav className={isMenuOpen ? css.active : css.nav}>
+      <nav ref={menuRef} className={isMenuOpen ? css.active : css.nav}>
         <ul className={css.navList}>
           <li className={css.navItem}>
             <a className={css.navLink} href="#">
