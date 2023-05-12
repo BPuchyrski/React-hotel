@@ -1,17 +1,55 @@
 import { Outlet } from "react-router-dom";
 import css from "./SharedLayout.module.css";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 const SharedLayout = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isMenuOpen]);
+
   return (
     <div>
+      <nav className={isMenuOpen ? css.active : css.nav}>
+        <ul className={css.navList}>
+          <li className={css.navItem}>
+            <a className={css.navLink} href="#">
+              Home
+            </a>
+          </li>
+          <li className={css.navItem}>
+            <a className={css.navLink} href="#">
+              Rooms
+            </a>
+          </li>
+          <li className={css.navItem}>
+            <a className={css.navLink} href="#">
+              About
+            </a>
+          </li>
+          <li className={css.navItem}>
+            <a className={css.navLink} href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div className={css.layout}>
         <div>
           <h3 className={css.title}>BB-Altic</h3>
           <p>Pokoje i apartamenty</p>
         </div>
         <div>
-          <button className={css.buttonBurger}>
+          <button className={css.buttonBurger} onClick={toggleMenu}>
             <svg
               className={css.burger}
               viewBox="0 0 100 80"

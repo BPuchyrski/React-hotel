@@ -22,5 +22,22 @@ p {
   cursor: pointer;
 }
 .burger {
-  margin-top: 5px;
+  margin-top: 8px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  background-color: #dbe5eb;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.active {
+  composes: nav;
+  transform: translateX(0%);
 }
