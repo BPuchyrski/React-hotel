@@ -32,7 +32,7 @@ const SharedLayout = () => {
   }, [isMenuOpen]);
 
   return (
-    <div>
+    <div className={css.conteiner}>
       <nav ref={menuRef} className={isMenuOpen ? css.active : css.nav}>
         <ul className={css.navList}>
           <li className={css.navItem}>
