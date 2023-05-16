@@ -8,7 +8,7 @@ const Contact = () => {
 
       <p></p>
       <div>
-        <Map height={300} defaultCenter={[54.06506, 14.95086]} defaultZoom={15}>
+        <Map height={300} defaultCenter={[54.06506, 14.95086]} defaultZoom={16}>
           <ZoomControl />
           <Marker width={50} anchor={[54.06506, 14.95086]} />
         </Map>
