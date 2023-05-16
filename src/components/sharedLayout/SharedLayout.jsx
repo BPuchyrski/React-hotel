@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import css from "./SharedLayout.module.css";
 import { Suspense, useEffect, useRef, useState } from "react";
 
@@ -19,10 +19,6 @@ const SharedLayout = () => {
     };
   }, [isMenuOpen]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
-
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -31,29 +27,49 @@ const SharedLayout = () => {
     }
   }, [isMenuOpen]);
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prevState) => !prevState);
+  };
+
   return (
     <div className={css.conteiner}>
       <nav ref={menuRef} className={isMenuOpen ? css.active : css.nav}>
         <ul className={css.navList}>
           <li className={css.navItem}>
-            <a className={css.navLink} href="#">
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className={css.navLink}
+              to="/"
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li className={css.navItem}>
-            <a className={css.navLink} href="#">
-              Rooms
-            </a>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className={css.navLink}
+              to="/"
+            >
+              Galeria
+            </Link>
           </li>
           <li className={css.navItem}>
-            <a className={css.navLink} href="#">
-              About
-            </a>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className={css.navLink}
+              to="/"
+            >
+              Kontakt
+            </Link>
           </li>
           <li className={css.navItem}>
-            <a className={css.navLink} href="#">
-              Contact
-            </a>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className={css.navLink}
+              to="/"
+            >
+              Domki
+            </Link>
           </li>
         </ul>
       </nav>
