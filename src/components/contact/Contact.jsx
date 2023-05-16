@@ -1,4 +1,4 @@
-import { Map, Marker } from "pigeon-maps";
+import { Map, Marker, ZoomControl } from "pigeon-maps";
 import css from "./Contact.module.css";
 
 const Contact = () => {
@@ -9,6 +9,7 @@ const Contact = () => {
       <p></p>
       <div>
         <Map height={300} defaultCenter={[54.06506, 14.95086]} defaultZoom={15}>
+          <ZoomControl />
           <Marker width={50} anchor={[54.06506, 14.95086]} />
         </Map>
       </div>
