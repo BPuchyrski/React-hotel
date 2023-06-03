@@ -91,6 +91,28 @@ const SharedLayout = () => {
               <rect y="60" width="100" height="8"></rect>
             </svg>
           </button>
+          <ul className={css.navListBig}>
+            <li className={css.navItemBig}>
+              <Link className={css.navLinkBig} to="/">
+                Home
+              </Link>
+            </li>
+            <li className={css.navItemBig}>
+              <Link className={css.navLinkBig} to="/">
+                Galeria
+              </Link>
+            </li>
+            <li className={css.navItemBig}>
+              <Link className={css.navLinkBig} to="/">
+                Home
+              </Link>
+            </li>
+            <li className={css.navItemBig}>
+              <Link className={css.navLinkBig} to="/">
+                Galeria
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
       <Suspense fallback={<div>Loading...</div>}>

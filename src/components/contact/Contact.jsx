@@ -3,7 +3,7 @@ import css from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <div>
+    <div className={css.overlay}>
       <h2 className={css.contactTitle}>Znajdziesz nas 5 minut od plaży !</h2>
 
       <p></p>

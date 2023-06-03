@@ -1,3 +1,6 @@
+.overlay {
+  padding: 0px 20px 20px;
+}
 .contact {
   text-align: center;
 }
@@ -13,4 +16,10 @@
 .contactTitle {
   padding: 30px 20px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contactTitle {
+    font-size: 32px;
+  }
 }

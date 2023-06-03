@@ -27,6 +27,7 @@ p {
 .conteiner {
   position: relative;
   overflow: hidden;
+  background-color: #dbe5eb;
 }
 .nav {
   display: flex;
@@ -76,4 +77,23 @@ p {
   text-transform: uppercase;
   border-bottom: black 1px solid;
   padding: 10px 0px;
+}
+
+.navListBig {
+  display: none;
+  gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  .buttonBurger {
+    display: none;
+  }
+  .navListBig {
+    display: flex;
+  }
+  .layout {
+    padding: 10px 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
