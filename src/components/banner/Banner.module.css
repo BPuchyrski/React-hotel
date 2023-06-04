@@ -72,4 +72,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .mainImg {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }

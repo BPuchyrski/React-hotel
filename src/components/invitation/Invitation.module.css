@@ -60,9 +60,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .item {
     flex-basis: calc((100% - 3 * 10px) / 4);
     height: 400px;
+  }
+  .layout {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
