@@ -4,6 +4,10 @@
 .contactInfoTitle {
   text-align: center;
 }
+.contactInfoImg {
+  width: 80px;
+  margin: 0 auto;
+}
 .contactList {
   display: flex;
   flex-direction: column;
@@ -20,11 +24,16 @@
 .contactInfo {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+.contactInfoBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +42,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .contactInfo {
     flex-direction: row;
     align-items: stretch;
@@ -46,6 +55,11 @@
   }
   .overlay {
     max-width: 1600px;
+    margin: 0 auto;
+  }
+  .contactInfoImg {
+    display: block;
+    width: 120px;
     margin: 0 auto;
   }
 }

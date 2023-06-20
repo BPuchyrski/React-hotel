@@ -1,8 +1,13 @@
 import css from "./Banner.module.css";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Banner = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className={css.mainImg}>
+    <div data-aos="zoom-in" className={css.mainImg}>
       <h1 className={css.bannerTitle}>BB-Altic</h1>
       <p className={css.bannerText}>Domki i noclegi w Pobierowie</p>
       <div className={css.lineShort}></div>

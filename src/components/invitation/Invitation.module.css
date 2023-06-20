@@ -22,8 +22,8 @@
 }
 .item {
   /* background-color: #2c74b3; */
-  background-color: #8fc0dd;
-  color: #fff;
+  background-color: #e4e6a7;
+  color: black;
   border-radius: 8px;
   text-align: center;
   padding: 20px 15px;
@@ -33,6 +33,7 @@
 .itemPurple {
   composes: item;
   background-color: #7c96c2;
+  color: white;
 }
 
 @media (min-width: 768px) {
@@ -60,7 +61,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .item {
     flex-basis: calc((100% - 3 * 10px) / 4);
     height: 400px;

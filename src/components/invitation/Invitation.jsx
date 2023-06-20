@@ -1,12 +1,17 @@
+import { useEffect } from "react";
 import css from "./Invitation.module.css";
 import shell from "../../assets/shell.svg";
 import checklist from "../../assets/checklist.svg";
 import map from "../../assets/map.svg";
 import calendar from "../../assets/calendar.svg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Invitation = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className={css.layout}>
+    <div data-aos="zoom-in-up" className={css.layout}>
       <h2 className={css.invitationTitle}>
         Zapraszamy do naszego ośrodka przez cały okres letni
       </h2>
