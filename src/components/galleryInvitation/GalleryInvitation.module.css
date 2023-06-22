@@ -1,0 +1,48 @@
+.overlay {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 20px;
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageToRight {
+  composes: image;
+  transform: rotate(3deg);
+}
+
+.image:hover {
+  transform: scale(1.1) rotate(0);
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .galleryItem {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+}
