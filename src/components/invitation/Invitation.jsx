@@ -18,29 +18,27 @@ const Invitation = () => {
       <ul className={css.list}>
         <li className={css.item}>
           <img className={css.icon} src={shell} alt="shell" />
-          <h3>Nadmorski klimat, piękna plaża, wspaniały wypoczynek</h3>
+          <h3>Wypoczynek prawie na plaży</h3>
           <p>
-            Oferujemy wypoczynek w Pobierowie, malowniczej miejscowości
-            położonej w lesie, wzdłuż wybrzeża. BB ALTIC usytuowany w pasie
-            nadmorskim 100 m od czystej, szerokiej plaży,w cichym spokojnym
-            miejscu wśród sosnowego lasu. Ośrodek wypoczynkowy BB ALTIC jest do
-            Twojej dyspozycji już od czerwca, aż do września.
+            Nadmorski klimat, piękna plaża wspaniała atmosfera i ośrodek
+            położony 150 m od morza
           </p>
         </li>
         <li className={css.itemPurple}>
           <img className={css.icon} src={checklist} alt="checklist" />
           <h3>JASNE WARUNKI POBYTU</h3>
           <p>
-            Żadnych ukrytych kosztów. Parking, prąd, to wszystko jest wliczone w
-            cenę pobytu. Nic Cię na miejscu nie zaskoczy.
+            Zadnych ukrytych kosztów media wliczone w cene pobytu . Parking
+            płatny 30 zł za tydzień pobytu Opłata klimatyczna pobierana wg
+            stawek gminy . Nic Cie na miejscu nie zaskoczy
           </p>
         </li>
         <li className={css.item}>
           <img className={css.icon} src={map} alt="map" />
           <h3>WSZĘDZIE BLISKO</h3>
           <p>
-            120m do plaży, 50m do sklepu, 800m do centrum, 800m do dworca. Na
-            pyszną rybę też dojdziesz piechotą. Czego chcieć więcej?
+            150 m od plaży, 100 do najbliższej jadłodajni, do dworca 1000 m
+            Zapraszamy do naszego ośrodka juz od maja
           </p>
         </li>
         <li className={css.itemPurple}>
