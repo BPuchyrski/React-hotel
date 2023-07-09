@@ -5,7 +5,6 @@ import sun from "../../assets/sun.svg";
 const Contact = () => {
   return (
     <div className={css.overlay}>
-      <h2 className={css.contactTitle}>Znajdziesz nas 5 minut od plaży !</h2>
       <div className={css.contactInfo}>
         <Map height={400} defaultCenter={[54.06506, 14.95086]} defaultZoom={16}>
           <ZoomControl />
