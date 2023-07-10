@@ -7,10 +7,10 @@ import MainPageGallery from "../components/mainPageGallery/MainPageGallery";
 const HomePage = () => {
   return (
     <>
+      <header>
+        <Banner />
+      </header>
       <main>
-        <section>
-          <Banner />
-        </section>
         <section>
           <Invitation />
         </section>

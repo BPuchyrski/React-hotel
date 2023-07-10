@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "fslightbox-react": "^1.7.6",
     "normalize.css": "^8.0.1",
     "pigeon-maps": "^0.21.3",
     "react": "^18.2.0",

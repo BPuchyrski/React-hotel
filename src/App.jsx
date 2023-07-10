@@ -7,6 +7,7 @@ const SharedLayout = lazy(() =>
 );
 
 const HomePage = lazy(() => import("./pages/HomePage"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage"));
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout></SharedLayout>}>
           <Route index element={<HomePage />}></Route>
+          <Route path="gallery" element={<GalleryPage />}></Route>
         </Route>
       </Routes>
     </div>
