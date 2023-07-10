@@ -6,7 +6,12 @@ const Contact = () => {
   return (
     <div className={css.overlay}>
       <div className={css.contactInfo}>
-        <Map height={400} defaultCenter={[54.06506, 14.95086]} defaultZoom={16}>
+        <Map
+          height={400}
+          defaultCenter={[54.06506, 14.95086]}
+          defaultZoom={16}
+          touchEvents={false}
+        >
           <ZoomControl />
           <Marker width={50} anchor={[54.06506, 14.95086]} />
         </Map>
