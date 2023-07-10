@@ -11,6 +11,7 @@ const Contact = () => {
           defaultCenter={[54.06506, 14.95086]}
           defaultZoom={16}
           touchEvents={false}
+          mouseEvents={false}
         >
           <ZoomControl />
           <Marker width={50} anchor={[54.06506, 14.95086]} />
