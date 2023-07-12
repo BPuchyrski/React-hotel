@@ -108,11 +108,11 @@ const SharedLayout = () => {
                 Regulamin
               </Link>
             </li>
-            {/* <li className={css.navItemBig}>
+            <li className={css.navItemBig}>
               <Link className={css.navLinkBig} to="/">
-                Galeria
+                Kontakt
               </Link>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>

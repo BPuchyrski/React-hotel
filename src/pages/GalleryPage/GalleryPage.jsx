@@ -1,8 +1,10 @@
 import css from "./GalleryPage.module.css";
+import { useEffect } from "react";
 
 import RoomInfo from "../../components/roomInfo/RoomInfo";
 import zielony1 from "../../assets/zielony1.jpeg";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const rooms = [
   {
     name: "Zielony",
@@ -43,8 +45,12 @@ const rooms = [
 ];
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init();
+  }, []);
   return (
-    <div className={css.container}>
+    <div data-aos="fade-up" className={css.container}>
       <h1 className={css.title}>Nasze Pokoje i Apartamenty</h1>
       <div className={css.room}>
         {rooms.map((room, index) => (
