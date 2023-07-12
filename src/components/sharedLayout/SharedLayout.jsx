@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import css from "./SharedLayout.module.css";
 import { Suspense, useEffect, useRef, useState } from "react";
+import { FidgetSpinner } from "react-loader-spinner";
 
 const SharedLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,9 +49,9 @@ const SharedLayout = () => {
             <Link
               onClick={() => setIsMenuOpen(false)}
               className={css.navLink}
-              to="/"
+              to="/gallery"
             >
-              Galeria
+              Pokoje
             </Link>
           </li>
           <li className={css.navItem}>
@@ -98,24 +99,40 @@ const SharedLayout = () => {
               </Link>
             </li>
             <li className={css.navItemBig}>
-              <Link className={css.navLinkBig} to="/">
-                Galeria
+              <Link className={css.navLinkBig} to="/gallery">
+                Pokoje
               </Link>
             </li>
             <li className={css.navItemBig}>
               <Link className={css.navLinkBig} to="/">
-                Home
+                Regulamin
               </Link>
             </li>
-            <li className={css.navItemBig}>
+            {/* <li className={css.navItemBig}>
               <Link className={css.navLinkBig} to="/">
                 Galeria
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className={css.loaderBackground}>
+            <FidgetSpinner
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="dna-loading"
+              wrapperStyle={{}}
+              wrapperClass="dna-wrapper"
+              ballColors={["#ff0000", "#00ff00", "#0000ff"]}
+              backgroundColor="#F4442E"
+            />
+            <p>Loading...</p>
+          </div>
+        }
+      >
         <Outlet />
       </Suspense>
     </div>
