@@ -53,6 +53,8 @@
   }
   .invitationTitle {
     font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .layout {
     padding: 30px 40px;
@@ -67,5 +69,16 @@
   .layout {
     max-width: 1600px;
     margin: 0 auto;
+  }
+
+  .invitationTitle {
+    font-size: 48px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .itemText {
+    width: 75%;
+    font-size: 18px;
   }
 }
