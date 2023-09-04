@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div data-aos="zoom-in" className={css.mainImg}>
       <h1 className={css.bannerTitle}>BB-Altic</h1>
-      <p className={css.bannerText}>Domki i noclegi w Pobierowie</p>
+      <p className={css.bannerText}>Domki Apartamenty Pokoje w Pobierowie</p>
       <div className={css.lineShort}></div>
       <div className={css.line}></div>
       <div className={css.lineShortLast}></div>
