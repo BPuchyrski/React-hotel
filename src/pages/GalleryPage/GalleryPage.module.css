@@ -25,4 +25,37 @@
     max-width: 1600px;
     margin: 0 auto;
   }
+
+  .title {
+    font-size: 48px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* text-shadow: 20px 20px 20px #000000; */
+    animation: textShadow 8s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0px 0px 0px #e4e6a7;
+  }
+  20% {
+    text-shadow: -20px -20px 20px #7c96c2;
+  }
+
+  40% {
+    text-shadow: 20px -20px 20px #e4e6a7;
+  }
+
+  60% {
+    text-shadow: -20px 20px 20px #7c96c2;
+  }
+
+  80% {
+    text-shadow: 20px 20px 20px #e4e6a7;
+  }
+
+  100% {
+    text-shadow: 0px 0px 0px #7c96c2;
+  }
 }

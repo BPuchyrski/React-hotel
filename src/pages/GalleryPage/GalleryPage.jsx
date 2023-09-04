@@ -11,7 +11,7 @@ const rooms = [
     photo: `${zielony1}`,
     text: "Komfortowy, nowo oddany domek/apartament 5-6-7 osobowy z kominkiem i ogrzewaniem podłogowym. Taras z meblami i grillem, łazienka, pokój dzienny z narożnikiem (może służyć jako dodatkowe spanie ) stolikiem kawowym i TV, kuchnia w pełnym wyposażeniu, na górze sypialnia 2 osobowa i 3 osobowa, w każdy pokój wyposażony w szafę , lampkę nocną, obok sypialni WC . ",
     gallery: [
-      "https://images.unsplash.com/photo-1688966838599-05e6cf6628cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80",
+      `${zielony1}`,
       "https://images.unsplash.com/photo-1688354222650-4df4c3f32222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     ],
   },
