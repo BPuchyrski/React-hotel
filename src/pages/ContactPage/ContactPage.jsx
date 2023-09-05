@@ -2,6 +2,13 @@ import { Map, Marker, ZoomControl } from "pigeon-maps";
 import css from "./ContactPage.module.css";
 
 const ContactPage = () => {
+  const userAgent = window.navigator.userAgent;
+  const isMobile = Boolean(
+    userAgent.match(
+      /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+    )
+  );
+
   return (
     <div>
       <div className={css.contactContainer}>
@@ -18,8 +25,8 @@ const ContactPage = () => {
         height={600}
         defaultCenter={[54.06506, 14.95086]}
         defaultZoom={16}
-        touchEvents={false}
-        mouseEvents={false}
+        touchEvents={isMobile ? false : true}
+        mouseEvents={isMobile ? false : true}
       >
         <ZoomControl />
         <Marker width={50} anchor={[54.06506, 14.95086]} />

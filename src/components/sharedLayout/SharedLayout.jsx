@@ -109,7 +109,7 @@ const SharedLayout = () => {
               </Link>
             </li>
             <li className={css.navItemBig}>
-              <Link className={css.navLinkBig} to="/">
+              <Link className={css.navLinkBig} to="/kontakt">
                 Kontakt
               </Link>
             </li>

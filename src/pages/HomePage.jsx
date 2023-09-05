@@ -4,6 +4,7 @@ import Invitation from "../components/invitation/Invitation";
 import GalleryInvitation from "../components/galleryInvitation/GalleryInvitation";
 import MainPageGallery from "../components/mainPageGallery/MainPageGallery";
 import { useEffect } from "react";
+import css from "./HomePage.module.css";
 
 const HomePage = () => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const HomePage = () => {
       <header>
         <Banner />
       </header>
-      <main>
+      <main className={css.container}>
         <section>
           <Invitation />
         </section>
