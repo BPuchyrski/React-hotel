@@ -58,18 +58,18 @@ const SharedLayout = () => {
             <Link
               onClick={() => setIsMenuOpen(false)}
               className={css.navLink}
-              to="/"
+              to="/regulamin"
             >
-              Kontakt
+              Regulamin
             </Link>
           </li>
           <li className={css.navItem}>
             <Link
               onClick={() => setIsMenuOpen(false)}
               className={css.navLink}
-              to="/"
+              to="/kontakt"
             >
-              Domki
+              Kontakt
             </Link>
           </li>
         </ul>
@@ -104,7 +104,7 @@ const SharedLayout = () => {
               </Link>
             </li>
             <li className={css.navItemBig}>
-              <Link className={css.navLinkBig} to="/">
+              <Link className={css.navLinkBig} to="/regulamin">
                 Regulamin
               </Link>
             </li>

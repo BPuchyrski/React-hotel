@@ -8,6 +8,8 @@ const SharedLayout = lazy(() =>
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage/GalleryPage"));
+const RegulaminPage = lazy(() => import("./pages/RegulaminPage/RegulaminPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage/ContactPage"));
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -18,6 +20,8 @@ function App() {
         <Route path="/" element={<SharedLayout></SharedLayout>}>
           <Route index element={<HomePage />}></Route>
           <Route path="gallery" element={<GalleryPage />}></Route>
+          <Route path="regulamin" element={<RegulaminPage />}></Route>
+          <Route path="kontakt" element={<ContactPage />}></Route>
         </Route>
       </Routes>
     </div>
