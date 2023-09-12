@@ -3,8 +3,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 70px;
 }
 
 .list {
   list-style: square;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: azure;
+  padding: 50px;
+  border-radius: 10px;
 }

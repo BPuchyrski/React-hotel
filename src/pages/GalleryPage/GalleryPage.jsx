@@ -37,7 +37,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 const rooms = [
   {
-    name: "Apartament 4 os",
+    name: "Studio Wschodnie 5/6-os",
     photo: `${apartament4os1}`,
     text: "Komfortowy, nowo oddany domek/apartament 5-6-7 osobowy z kominkiem i ogrzewaniem podłogowym. Taras z meblami i grillem, łazienka, pokój dzienny z narożnikiem (może służyć jako dodatkowe spanie ) stolikiem kawowym i TV, kuchnia w pełnym wyposażeniu, na górze sypialnia 2 osobowa i 3 osobowa, w każdy pokój wyposażony w szafę , lampkę nocną, obok sypialni WC . ",
     gallery: [
@@ -55,7 +55,7 @@ const rooms = [
     ],
   },
   {
-    name: "Pokoj 2 os morski ",
+    name: "Pokój 2-os morski",
     photo: `${morski1}`,
     text: "Nowy komfortowy apartament 3-4 osobowy z ogrzewaniem podłogowym, przed wejściem taras z meblami, pokój dzienny z aneksem kuchennym w pełnym wyposażeniu i TV, przytulna sypialnia z 2 łóżkami jednoosobowymi i szafą, łazienka. Jeśli chcesz przyjechać z przyjaciółmi dysponujemy dwoma taki apartamentami obok siebie. Zapraszam :)",
     gallery: [
@@ -70,7 +70,7 @@ const rooms = [
     ],
   },
   {
-    name: "Pokoj granatowy 3-4 os",
+    name: "Pokój 3/4-os granatowy",
     photo: `${granatowy1}`,
     text: "Pokoje z łazienkami granatowy 3-4 osobowy i pokój pomarańczowy 2-3 osobowy, aneks kuchenny, taras",
     gallery: [
@@ -81,7 +81,7 @@ const rooms = [
     ],
   },
   {
-    name: "Pokoj zielony 3 os studio zachodnie ",
+    name: "Pokój 3-os zielony",
     photo: `${zielony5}`,
     text: "Nowy komfortowy apartament 3-4 osobowy z ogrzewaniem podłogowym, przed wejściem taras z meblami, pokój dzienny z aneksem kuchennym w pełnym wyposażeniu i TV, przytulna sypialnia z 2 łóżkami jednoosobowymi i szafą, łazienka. Jeśli chcesz przyjechać z przyjaciółmi dysponujemy dwoma taki apartamentami obok siebie. Zapraszam :)",
     gallery: [
@@ -90,6 +90,39 @@ const rooms = [
       `${zielony3}`,
       `${zielony4}`,
       `${zielony6}`,
+    ],
+  },
+  {
+    name: "Pokój 2-os pomarańczowy",
+    photo: `${granatowy1}`,
+    text: "Pokoje z łazienkami granatowy 3-4 osobowy i pokój pomarańczowy 2-3 osobowy, aneks kuchenny, taras",
+    gallery: [
+      `${granatowy1}`,
+      `${granatowy2}`,
+      `${granatowy3}`,
+      `${granatowy4}`,
+    ],
+  },
+  {
+    name: "Studio zachodnie 4-os",
+    photo: `${apartament4os1}`,
+    text: `Komfortowy apartament 3-4 osobowy z ogrzewaniem podłogowym, przed
+    wejściem taras z meblami, pokój dzienny z aneksem kuchennym w pełnym
+    wyposażeniu i TV, przytulna sypialnia z 2 łóżkami jednoosobowymi i
+    szafą, łazienka. Jeśli chcesz przyjechać z przyjaciółmi dysponujemy
+    dwoma taki apartamentami obok siebie.`,
+    gallery: [
+      `${apartament4os1}`,
+      `${apartament4os2}`,
+      `${apartament4os3}`,
+      `${apartament4os4}`,
+      `${apartament4os5}`,
+      `${apartament4os6}`,
+      `${apartament4os7}`,
+      `${apartament4os8}`,
+      `${apartament4os9}`,
+      `${apartament4os10}`,
+      `${apartament4os11}`,
     ],
   },
 ];
