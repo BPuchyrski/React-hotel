@@ -7,12 +7,21 @@ import RoomInfo from "../../components/roomInfo/RoomInfo";
 // import granatowy2 from "../../assets/granatowy/received_2664648657194855.jpeg";
 // import granatowy3 from "../../assets/granatowy/received_3189140327869487.jpeg";
 // import granatowy4 from "../../assets/granatowy/received_3523302587683019.jpeg";
+import granatowy10 from "../../assets/granatowy/gran1.jpeg";
+import granatowy11 from "../../assets/granatowy/gran2.jpeg";
+import granatowy12 from "../../assets/granatowy/gran3.jpeg";
+import granatowy13 from "../../assets/granatowy/gran4.jpeg";
+import granatowy14 from "../../assets/granatowy/gran5.jpeg";
 import zielony1 from "../../assets/zielony/IMG_20230415_161208-min.jpg";
 import zielony2 from "../../assets/zielony/received_1391006654443116-min.jpeg";
 // import zielony3 from "../../assets/zielony/received_1788703867920111-min.jpeg";
 // import zielony4 from "../../assets/zielony/received_259750218468311-min.jpeg";
 // import zielony5 from "../../assets/zielony/received_660708191176972-min.jpeg";
 // import zielony6 from "../../assets/zielony/received_687727045124822-min.jpeg";
+import zielony10 from "../../assets/zielony/ziel1.jpg";
+import zielony11 from "../../assets/zielony/ziel2.jpeg";
+import zielony12 from "../../assets/zielony/ziel3.jpeg";
+import zielony13 from "../../assets/zielony/ziel4.jpeg";
 import polnocny from "../../assets/polnocny/pol.jpg";
 import polnocny1 from "../../assets/polnocny/pol1.jpg";
 import polnocny2 from "../../assets/polnocny/pol2.jpg";
@@ -21,9 +30,12 @@ import polnocny4 from "../../assets/polnocny/pol4.jpg";
 import polnocny5 from "../../assets/polnocny/pol5.jpeg";
 import polnocny6 from "../../assets/polnocny/pol6.jpeg";
 import polnocny7 from "../../assets/polnocny/pol7.jpeg";
-import polnocny8 from "../../assets/polnocny/pol8.jpeg";
-import polnocny9 from "../../assets/polnocny/pol9.jpeg";
 import polnocny10 from "../../assets/polnocny/pol10.jpeg";
+import polnocny11 from "../../assets/polnocny/pol11.jpg";
+import polnocny12 from "../../assets/polnocny/pol12.jpg";
+import polnocny13 from "../../assets/polnocny/pol13.jpg";
+import polnocny14 from "../../assets/polnocny/pol14.jpg";
+import polnocny15 from "../../assets/polnocny/pol15.jpg";
 import poludniowy from "../../assets/poludniowy/polu.jpg";
 import poludniowy1 from "../../assets/poludniowy/polu1.jpg";
 import poludniowy2 from "../../assets/poludniowy/polu2.jpg";
@@ -38,6 +50,9 @@ import poludniowy10 from "../../assets/poludniowy/polu10.jpeg";
 import poludniowy11 from "../../assets/poludniowy/polu11.jpeg";
 import poludniowy12 from "../../assets/poludniowy/polu12.jpeg";
 import poludniowy13 from "../../assets/poludniowy/polu13.jpeg";
+import poludniowy14 from "../../assets/poludniowy/polu14.jpeg";
+import poludniowy15 from "../../assets/poludniowy/polu15.jpeg";
+import poludniowy16 from "../../assets/poludniowy/polu16.jpeg";
 import zachodni from "../../assets/zachodni/zach.jpeg";
 import zachodni1 from "../../assets/zachodni/zach1.jpg";
 import zachodni2 from "../../assets/zachodni/zach2.jpeg";
@@ -62,7 +77,21 @@ import morski3 from "../../assets/morski/mor3.jpg";
 import morski4 from "../../assets/morski/mor4.jpg";
 import morski5 from "../../assets/morski/mor5.jpg";
 import morski6 from "../../assets/morski/mor6.jpeg";
-import morski7 from "../../assets/morski/mor7.jpeg";
+import morski8 from "../../assets/morski/mor8.jpg";
+import morski9 from "../../assets/morski/mor9.jpg";
+import morski10 from "../../assets/morski/mor10.jpg";
+import morski11 from "../../assets/morski/mor11.jpg";
+import morski12 from "../../assets/morski/mor12.jpeg";
+import morski13 from "../../assets/morski/mor13.jpeg";
+import morski14 from "../../assets/morski/mor14.jpeg";
+import orange from "../../assets/pomaranczowy/pom1.jpg";
+import orange1 from "../../assets/pomaranczowy/pom2.jpg";
+import orange2 from "../../assets/pomaranczowy/pom3.jpeg";
+import orange3 from "../../assets/pomaranczowy/pom4.jpeg";
+import orange4 from "../../assets/pomaranczowy/pom5.jpeg";
+import orange5 from "../../assets/pomaranczowy/pom6.jpeg";
+import orange6 from "../../assets/pomaranczowy/pom7.jpeg";
+import orange7 from "../../assets/pomaranczowy/pom8.jpeg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -84,8 +113,11 @@ const rooms = [
       `${polnocny5}`,
       `${polnocny6}`,
       `${polnocny7}`,
-      `${polnocny8}`,
-      `${polnocny9}`,
+      `${polnocny11}`,
+      `${polnocny12}`,
+      `${polnocny13}`,
+      `${polnocny14}`,
+      `${polnocny15}`,
       `${polnocny10}`,
     ],
   },
@@ -109,6 +141,9 @@ const rooms = [
       `${poludniowy11}`,
       `${poludniowy12}`,
       `${poludniowy13}`,
+      `${poludniowy14}`,
+      `${poludniowy15}`,
+      `${poludniowy16}`,
     ],
   },
   {
@@ -159,7 +194,13 @@ const rooms = [
       `${morski4}`,
       `${morski5}`,
       `${morski6}`,
-      `${morski7}`,
+      `${morski8}`,
+      `${morski9}`,
+      `${morski10}`,
+      `${morski11}`,
+      `${morski12}`,
+      `${morski13}`,
+      `${morski14}`,
     ],
   },
   {
@@ -171,6 +212,40 @@ const rooms = [
     szafą, łazienka. Jeśli chcesz przyjechać z przyjaciółmi dysponujemy
     dwoma taki apartamentami obok siebie.`,
     gallery: [`${zielony1}`, `${zielony2}`],
+  },
+  {
+    name: "POKÓJ ZIELONY 3 OSOBOWY",
+    photo: `${zielony12}`,
+    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
+    gallery: [`${zielony10}`, `${zielony11}`, `${zielony12}`, `${zielony13}`],
+  },
+  {
+    name: "POKÓJ GRANATOWY 3-4 OSOBOWY",
+    photo: `${granatowy10}`,
+    text: `Pokoj granatowy 3-4 osobowy z dwoma łózkami 2 osobowymi  z łazienka TV w pokoju czajnik i lodówka. Obok pokoju aneks kuchenny.`,
+    gallery: [
+      `${granatowy10}`,
+      `${granatowy11}`,
+      `${granatowy12}`,
+      `${granatowy13}`,
+      `${granatowy14}`,
+      `${zielony10}`,
+    ],
+  },
+  {
+    name: "POKÓJ POMARAŃCZOWY 2 OSOBOWY",
+    photo: `${orange2}`,
+    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
+    gallery: [
+      `${orange}`,
+      `${orange1}`,
+      `${orange2}`,
+      `${orange3}`,
+      `${orange4}`,
+      `${orange5}`,
+      `${orange6}`,
+      `${orange7}`,
+    ],
   },
 ];
 
