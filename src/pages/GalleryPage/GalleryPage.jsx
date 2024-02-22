@@ -13,7 +13,7 @@ import granatowy12 from "../../assets/granatowy/gran3.jpeg";
 import granatowy13 from "../../assets/granatowy/gran4.jpeg";
 import granatowy14 from "../../assets/granatowy/gran5.jpeg";
 import zielony1 from "../../assets/zielony/IMG_20230415_161208-min.jpg";
-import zielony2 from "../../assets/zielony/received_1391006654443116-min.jpeg";
+// import zielony2 from "../../assets/zielony/received_1391006654443116-min.jpeg";
 // import zielony3 from "../../assets/zielony/received_1788703867920111-min.jpeg";
 // import zielony4 from "../../assets/zielony/received_259750218468311-min.jpeg";
 // import zielony5 from "../../assets/zielony/received_660708191176972-min.jpeg";
@@ -182,6 +182,69 @@ const rooms = [
       `${wschodni9}`,
     ],
   },
+
+  {
+    name: "STUDIO 5 OSOBOWE ZACHODNIE",
+    photo: `${morski12}`,
+    text: `Samodzielne studio 5 osobowe z osobnym wejściem  składające sie z dwóch pokoi 2 i 3 osobowego. Kady pokoj ma swoja łazienka tv oraz czajnik i lodówke. Na korytarzu znajduje sie aneks kuchenny z mikrofalą płyta indukcyjną i zlewozmywakiem  wyposażony w naczynia talerze garnki sztucce. Przed wejściem do studia zadaszony  taras z meblami .`,
+    gallery: [
+      `${zielony1}`,
+      `${morski}`,
+      `${morski1}`,
+      `${morski2}`,
+      `${morski3}`,
+      `${morski4}`,
+      `${morski5}`,
+      `${morski6}`,
+      `${morski8}`,
+      `${morski9}`,
+      `${morski10}`,
+      `${morski11}`,
+      `${morski12}`,
+      `${morski13}`,
+      `${morski14}`,
+    ],
+  },
+  {
+    name: "STUDIO 5 OSOBOWE WSCHODNIE",
+    photo: `${granatowy13}`,
+    text: `Samodzielne studio 5 osobowe z osobnym wejściem  składające sie z dwóch pokoi 2 i 3-4 osobowego. Każdy pokoj ma swoja łazienka tv oraz czajnik i lodówke. Na korytarzu znajduje sie aneks kuchenny z mikrofalą płyta indukcyjną i zlewozmywakiem  wyposażony w naczynia talerze garnki sztucce. Przed wejściem do studia zadaszony  taras z meblami `,
+    gallery: [
+      `${granatowy10}`,
+      `${granatowy11}`,
+      `${granatowy12}`,
+      `${granatowy13}`,
+      `${granatowy14}`,
+      `${zielony10}`,
+      `${orange}`,
+      `${orange1}`,
+      `${orange2}`,
+      `${orange3}`,
+      `${orange4}`,
+      `${orange5}`,
+      `${orange6}`,
+      `${orange7}`,
+    ],
+  },
+  {
+    name: "POKÓJ ZIELONY 3 OSOBOWY",
+    photo: `${zielony12}`,
+    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
+    gallery: [`${zielony10}`, `${zielony11}`, `${zielony12}`, `${zielony13}`],
+  },
+  {
+    name: "POKÓJ GRANATOWY 3-4 OSOBOWY",
+    photo: `${granatowy10}`,
+    text: `Pokoj granatowy 3-4 osobowy z dwoma łózkami 2 osobowymi  z łazienka TV w pokoju czajnik i lodówka. Obok pokoju aneks kuchenny.`,
+    gallery: [
+      `${granatowy10}`,
+      `${granatowy11}`,
+      `${granatowy12}`,
+      `${granatowy13}`,
+      `${granatowy14}`,
+      `${zielony10}`,
+    ],
+  },
   {
     name: "POKÓJ MORSKI 2 OSOBOWY",
     photo: `${morski}`,
@@ -201,35 +264,6 @@ const rooms = [
       `${morski12}`,
       `${morski13}`,
       `${morski14}`,
-    ],
-  },
-  {
-    name: "Studio zachodnie 4-os",
-    photo: `${zielony1}`,
-    text: `Komfortowy apartament 3-4 osobowy z ogrzewaniem podłogowym, przed
-    wejściem taras z meblami, pokój dzienny z aneksem kuchennym w pełnym
-    wyposażeniu i TV, przytulna sypialnia z 2 łóżkami jednoosobowymi i
-    szafą, łazienka. Jeśli chcesz przyjechać z przyjaciółmi dysponujemy
-    dwoma taki apartamentami obok siebie.`,
-    gallery: [`${zielony1}`, `${zielony2}`],
-  },
-  {
-    name: "POKÓJ ZIELONY 3 OSOBOWY",
-    photo: `${zielony12}`,
-    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
-    gallery: [`${zielony10}`, `${zielony11}`, `${zielony12}`, `${zielony13}`],
-  },
-  {
-    name: "POKÓJ GRANATOWY 3-4 OSOBOWY",
-    photo: `${granatowy10}`,
-    text: `Pokoj granatowy 3-4 osobowy z dwoma łózkami 2 osobowymi  z łazienka TV w pokoju czajnik i lodówka. Obok pokoju aneks kuchenny.`,
-    gallery: [
-      `${granatowy10}`,
-      `${granatowy11}`,
-      `${granatowy12}`,
-      `${granatowy13}`,
-      `${granatowy14}`,
-      `${zielony10}`,
     ],
   },
   {
