@@ -229,7 +229,7 @@ const rooms = [
   {
     name: "POKÓJ ZIELONY 3 OSOBOWY",
     photo: `${zielony12}`,
-    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
+    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu. `,
     gallery: [`${zielony10}`, `${zielony11}`, `${zielony12}`, `${zielony13}`],
   },
   {
@@ -248,7 +248,7 @@ const rooms = [
   {
     name: "POKÓJ MORSKI 2 OSOBOWY",
     photo: `${morski}`,
-    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami  Możliwość skorzystania z altanki i grila Do dyspozycji gości miejsca parkingowe, miejsca do grilowania, plac zabaw dla dzieci, rowery sprzęt plażowy.`,
+    text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu.  Przed wejściem taras z meblami `,
     gallery: [
       `${morski}`,
       `${morski1}`,
