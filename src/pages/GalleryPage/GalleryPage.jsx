@@ -3,25 +3,6 @@ import { useEffect } from "react";
 
 import RoomInfo from "../../components/roomInfo/RoomInfo";
 
-// import granatowy1 from "../../assets/granatowy/IMG-20230628-WA0005.jpg";
-// import granatowy2 from "../../assets/granatowy/received_2664648657194855.jpeg";
-// import granatowy3 from "../../assets/granatowy/received_3189140327869487.jpeg";
-// import granatowy4 from "../../assets/granatowy/received_3523302587683019.jpeg";
-import granatowy10 from "../../assets/granatowy/gran1.jpeg";
-import granatowy11 from "../../assets/granatowy/gran2.jpeg";
-import granatowy12 from "../../assets/granatowy/gran3.jpeg";
-import granatowy13 from "../../assets/granatowy/gran4.jpeg";
-import granatowy14 from "../../assets/granatowy/gran5.jpeg";
-import zielony1 from "../../assets/zielony/IMG_20230415_161208-min.jpg";
-// import zielony2 from "../../assets/zielony/received_1391006654443116-min.jpeg";
-// import zielony3 from "../../assets/zielony/received_1788703867920111-min.jpeg";
-// import zielony4 from "../../assets/zielony/received_259750218468311-min.jpeg";
-// import zielony5 from "../../assets/zielony/received_660708191176972-min.jpeg";
-// import zielony6 from "../../assets/zielony/received_687727045124822-min.jpeg";
-import zielony10 from "../../assets/zielony/ziel1.jpg";
-import zielony11 from "../../assets/zielony/ziel2.jpeg";
-import zielony12 from "../../assets/zielony/ziel3.jpeg";
-import zielony13 from "../../assets/zielony/ziel4.jpeg";
 import polnocny from "../../assets/polnocny/pol.jpg";
 import polnocny1 from "../../assets/polnocny/pol1.jpg";
 import polnocny2 from "../../assets/polnocny/pol2.jpg";
@@ -92,6 +73,17 @@ import orange4 from "../../assets/pomaranczowy/pom5.jpeg";
 import orange5 from "../../assets/pomaranczowy/pom6.jpeg";
 import orange6 from "../../assets/pomaranczowy/pom7.jpeg";
 import orange7 from "../../assets/pomaranczowy/pom8.jpeg";
+import z1 from "../../assets/zielony/z1.jpg";
+import z2 from "../../assets/zielony/z2.jpg";
+import z3 from "../../assets/zielony/z3.jpg";
+import z4 from "../../assets/zielony/z4.jpg";
+import z5 from "../../assets/zielony/z5.jpg";
+import z6 from "../../assets/zielony/z6.jpg";
+import z7 from "../../assets/zielony/z7.jpg";
+import g1 from "../../assets/granatowy/g1.jpg";
+import g2 from "../../assets/granatowy/g2.jpg";
+import g3 from "../../assets/granatowy/g3.jpg";
+import g4 from "../../assets/granatowy/g4.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -188,7 +180,13 @@ const rooms = [
     photo: `${morski12}`,
     text: `Samodzielne studio 5 osobowe z osobnym wejściem  składające sie z dwóch pokoi 2 i 3 osobowego. Kady pokoj ma swoja łazienka tv oraz czajnik i lodówke. Na korytarzu znajduje sie aneks kuchenny z mikrofalą płyta indukcyjną i zlewozmywakiem  wyposażony w naczynia talerze garnki sztucce. Przed wejściem do studia zadaszony  taras z meblami .`,
     gallery: [
-      `${zielony1}`,
+      `${z1}`,
+      `${z2}`,
+      `${z3}`,
+      `${z4}`,
+      `${z5}`,
+      `${z6}`,
+      `${z7}`,
       `${morski}`,
       `${morski1}`,
       `${morski2}`,
@@ -207,15 +205,13 @@ const rooms = [
   },
   {
     name: "STUDIO 5 OSOBOWE WSCHODNIE",
-    photo: `${granatowy13}`,
+    photo: `${g1}`,
     text: `Samodzielne studio 5 osobowe z osobnym wejściem  składające sie z dwóch pokoi 2 i 3-4 osobowego. Każdy pokoj ma swoja łazienka tv oraz czajnik i lodówke. Na korytarzu znajduje sie aneks kuchenny z mikrofalą płyta indukcyjną i zlewozmywakiem  wyposażony w naczynia talerze garnki sztucce. Przed wejściem do studia zadaszony  taras z meblami `,
     gallery: [
-      `${granatowy10}`,
-      `${granatowy11}`,
-      `${granatowy12}`,
-      `${granatowy13}`,
-      `${granatowy14}`,
-      `${zielony10}`,
+      `${g1}`,
+      `${g2}`,
+      `${g3}`,
+      `${g4}`,
       `${orange}`,
       `${orange1}`,
       `${orange2}`,
@@ -228,22 +224,15 @@ const rooms = [
   },
   {
     name: "POKÓJ ZIELONY 3 OSOBOWY",
-    photo: `${zielony12}`,
+    photo: `${z6}`,
     text: `Pokój  z łazienką łóżkiem 2 osobowym,   TV. W pokoju czajnik, lodówka kącik kuchenny, szafa stól z krzesłami obok pokoju aneks kuchenny w pełnym wyposażeniu. `,
-    gallery: [`${zielony10}`, `${zielony11}`, `${zielony12}`, `${zielony13}`],
+    gallery: [`${z1}`, `${z2}`, `${z3}`, `${z4}`, `${z5}`, `${z6}`, `${z7}`],
   },
   {
     name: "POKÓJ GRANATOWY 3-4 OSOBOWY",
-    photo: `${granatowy10}`,
+    photo: `${g4}`,
     text: `Pokoj granatowy 3-4 osobowy z dwoma łózkami 2 osobowymi  z łazienka TV w pokoju czajnik i lodówka. Obok pokoju aneks kuchenny.`,
-    gallery: [
-      `${granatowy10}`,
-      `${granatowy11}`,
-      `${granatowy12}`,
-      `${granatowy13}`,
-      `${granatowy14}`,
-      `${zielony10}`,
-    ],
+    gallery: [`${g1}`, `${g2}`, `${g3}`, `${g4}`],
   },
   {
     name: "POKÓJ MORSKI 2 OSOBOWY",
